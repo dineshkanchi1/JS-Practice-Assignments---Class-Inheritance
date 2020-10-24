@@ -2,7 +2,6 @@
 
 // export class using module.exports
 import React from "react";
-import Circle from "./circle";
 
 export default class Shape extends React.Component {
   constructor(props) {
@@ -11,13 +10,14 @@ export default class Shape extends React.Component {
       color: "red"
     };
   }
+  setColor(color) {
+    this.setState({ color: color });
+  }
   drawShape() {
-    console.log("shape");
+    console.log("draw");
   }
-  calculateArea() {
-    console.log("area");
-  }
+  calculateArea() {}
   render() {
-    return <Circle />;
+    return <h1>Shape</h1>;
   }
 }
