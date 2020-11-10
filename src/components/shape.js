@@ -3,9 +3,8 @@
 // export class using module.exports
 import React from "react";
 
-export default class Shape extends React.Component {
-  constructor(props) {
-    super(props);
+class Shape extends React.Component {
+  constructor() {
     this.state = {
       color: "red"
     };
@@ -21,3 +20,4 @@ export default class Shape extends React.Component {
     return <h1>Shape</h1>;
   }
 }
+module.exports = Shape;

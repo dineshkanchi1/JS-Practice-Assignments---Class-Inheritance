@@ -4,8 +4,11 @@
 
 // export class using module.exports
 
-import Shape from "./shape";
-export default class Circle extends Shape {
+let Shape = require("./shape");
+class Circle extends Shape {
+  constructor(props) {
+    super(props);
+  }
   calculateArea() {
     console.log("circle area");
   }
@@ -13,3 +16,4 @@ export default class Circle extends Shape {
     return <h1>Circle</h1>;
   }
 }
+module.exports = Circle;
