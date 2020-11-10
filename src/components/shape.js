@@ -3,9 +3,9 @@
 // export class using module.exports
 import React from "react";
 
-class Shape extends React.Component {
+class Shape {
   constructor() {
-    this.color = "#ffffff";
+    this.color = "#fffff";
   }
   drawShape() {
     console.log("draw");
