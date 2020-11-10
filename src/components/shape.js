@@ -5,17 +5,14 @@ import React from "react";
 
 class Shape extends React.Component {
   constructor() {
-    this.state = {
-      color: "red"
-    };
-  }
-  setColor(color) {
-    this.setState({ color: color });
+    this.color: "red";
   }
   drawShape() {
     console.log("draw");
   }
-  calculateArea() {}
+  calculateArea() {
+    console.log("area");
+  }
   render() {
     return <h1>Shape</h1>;
   }
